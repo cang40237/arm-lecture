@@ -14,7 +14,7 @@ lock_mutex:
 	ldrex r2, [r0]
 	cmp r2 , #0
 	strexeq r2 , r1 , [r0]
-	cmp r2 , #0
+	cmpeq r2 , #0
 	bne .loop 
         @ END CODE INSERT
 	bx lr
