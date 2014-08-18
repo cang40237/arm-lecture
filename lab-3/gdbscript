@@ -1,0 +1,7 @@
+target remote :1234
+br 10
+continue
+next
+set var number = 6
+continue
+
